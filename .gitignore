@@ -3,6 +3,7 @@
 # Package Files #
 *.war
 *.ear
+*.class
 .project
 .settings
 bin
