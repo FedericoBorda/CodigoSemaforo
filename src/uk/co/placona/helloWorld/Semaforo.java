@@ -23,31 +23,34 @@ public class Semaforo {
 		}
 		
 		
+		
 	}
 	
 	public void sacarIntermitente(){
 		
 		contador= contador % 54;
 		
-		if(contador >0 && contador <= 30){
+		if(contador >=0 && contador <= 29){
 			color= "Rojo";
 		}
-		if(contador >30 && contador <= 32){
+		if(contador >29 && contador <= 31){
 			color= "Rojo-Amarillo";
 		}
-		if(contador >32 && contador <= 52){
+		if(contador >31 && contador <= 51){
 			color= "Verde";
 		}
-		if(contador >52 && contador < 54){
+		if(contador >51 && contador < 54){
 			color= "Amarillo";
 		}
+		
+		
 
 	}
 	
 	
 	public int pasoDelTiempo(int segundos){
 		
-		contador += contador + segundos;
+		contador = segundos;
 			
 		return contador;
 			
